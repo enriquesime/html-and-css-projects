@@ -1,0 +1,75 @@
+body{
+    /* Formateo de pagina */
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: rgb(2, 3, 4);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 11px;
+    border-color: aqua;
+    
+}
+nav a:hover{
+color: aqua;
+}
+
+h2:hover{
+color: rgb(0, 255, 102);
+}
+
+.logo img:hover{
+border: solid rgb(0, 255, 102);
+}
+/* a:hover{
+height: 49px;
+} */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
+
+}
+
+a{
+    text-decoration:none;
+}
+
+.company-name{
+    color: aliceblue;
+}
+
+.nav-link{
+    color: aliceblue;
+}
+
+@media (max-width:492px) {
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px  0px;
+        margin-right: 5px;
+    }
+}

@@ -1,0 +1,100 @@
+
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: aquamarine;
+    font-family: sans-serif;
+   
+}
+
+h1{
+   display: flex;
+   justify-content: center;
+   height: -20vh;
+   margin-top: 10px;
+}
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    height: 50vh;
+    width: 100vw;
+    
+}
+
+
+.image-container .image > img{
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.image{
+     height: 150px;
+    width: 150px;
+    border: solid black;
+    border-radius: 15px;
+    margin: 45px 40px 35px;
+    background-color: gray;
+    margin-top: 15%;
+    position: relative;
+
+}
+.image-container .image:hover .name{
+    display: inline-block;   
+  transform: translateY(-20px);
+}
+
+
+.image-container .image .name {
+      display: none;
+      position: absolute;
+      color:aliceblue;
+      min-width: 100px;
+      width: 150px;
+      color: white;
+      border-radius: 5px;
+      background-color: black;
+      position: absolute;
+      top: -55px;
+      /* left:auto */
+}
+
+
+
+.image-container .image .name .text{
+    display: inline-block;
+    text-transform: capitalize;
+    /* border: 5px solid black; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    padding-left: 5%;
+     max-width: 150px;
+    margin: 10px auto;
+    text-overflow: ellipsis;
+}
+
+
+.image-container .image .name::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 40%;
+    bottom: -20px;
+    /* background-color: blue; */
+    border-top: 10px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.image-container .image:hover img{
+    transform: translateY(-3px);
+}
